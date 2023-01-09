@@ -1,0 +1,20 @@
+# Created at 2023-01-08T15:35:00.475
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Error occurred during initialization of VM'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'Error occurred during initialization of VM'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+# Created at 2023-01-08T15:35:00.476
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Unable to allocate 129920KB bitmaps for parallel garbage collection for the requested 4157440KB heap.'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'Unable to allocate 129920KB bitmaps for parallel garbage collection for the requested 4157440KB heap.'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.lang.Thread.run(Thread.java:750)
+
+
